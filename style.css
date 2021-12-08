@@ -1,0 +1,330 @@
+/*           FONTS            */
+
+
+/*           AR FONT          */
+
+
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+
+
+/*          END AR FONT        */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100&family=Merienda+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+
+/*           END FONTS         */
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo Da 2', cursive;
+  background-color: RGB(32, 155, 186);
+  min-height: 100vh;
+}
+
+
+/*          NAV BAR           */
+
+
+.nav{
+  background-color: RGB(32, 155, 186);
+  display: flex;
+  position: relative;
+}
+#title{
+  font-size: 30px;
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: 'Merienda One', cursive;
+}
+
+
+/*          END NAV BAR        */
+
+
+/*           SIDE BAR          */
+
+
+#open-menu-icon{
+  width: 34px;
+  height: 34px;
+  transition: 0.3s ease-in-out ;
+  border-radius: 5px;
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  padding: 3px;
+  border: 2px solid lightskyblue;
+}
+#close-menu-icon{
+  transition: 0.3s ease-in-out;
+  border-radius: 100px;
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  background-color: RGB(32, 155, 186);
+  border: 2px solid lightskyblue;
+  width: 29px;
+  height: 29px;
+  padding: 5px;
+  visibility: hidden;
+}
+#open-menu-icon:hover{
+   background-color: RGB(32, 155, 186);
+  border: 2px solid lightskyblue;
+  width: 34px;
+  height: 34px;
+  visibility: hidden;
+  width: 9px;
+  height: 9px;
+  padding: 15px;
+  border-radius: 100px;
+}
+#close-menu-icon:hover{
+  background-color: transparent;
+  width: 5px;
+  height: 5px;
+  padding: 17px;
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+.side-bar-container{
+  position: relative;
+  text-decoration: none;
+  background-color: white;
+  width: 100%;
+  background-color: transparent;
+}
+.side-bar{
+  position: absolute;
+  width: 93%;
+  background-color: white;
+  margin-left: 3%;
+  height: 0;
+  font-size: 22px;
+  overflow: auto;
+  border: 3px solid lightskyblue;
+  border-radius: 5px;
+  line-height: 70px;
+  color: RGB(32, 155, 186);
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+  padding-top: 18px;
+  visibility: hidden;
+}
+
+.side-bar details summary{
+  outline: none;
+  transition: 0.5s;
+  margin: auto;
+  margin-top: 10px;
+  width: 85%;
+  border-radius: 5px;
+  background-color: RGB(32, 155, 186);
+  color: white;
+  list-style-type: none;
+  text-align: center;
+
+}
+
+.side-bar details summary:hover{
+  background-color: white;
+  box-shadow: 0 0 0px 2px RGB(32, 155, 186);
+  color: RGB(32, 155, 186);
+}
+.side-bar  button{
+  outline: none;
+  border: none;
+  color: RGB(32, 155, 186);
+  background-color: transparent;
+  font-size: 15px;
+  transition: 0.5s;
+  font-family: 'Baloo Da 2', cursive;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+.side-bar button:hover, .side-bar button:focus{
+  background-color: white;
+  box-shadow: 0 0 0px 2px RGB(32, 155, 186);
+  color: RGB(32, 155, 186);
+  border-radius: 100px;
+}
+#en-lang{
+  background-image: url(icons/united-states-of-america.png);
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: 7px 6px;
+  font-size: 20px;
+  padding-left: 40px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  color: white;
+  background-color: RGB(32, 155, 186);
+  border-radius: 100px;
+  margin-left: 8px;
+}
+#ar-lang{
+  background-image: url(icons/united-arab-emirates.png);
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: 7px 6px;
+  font-size: 20px;
+  padding-left: 40px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  color: white;
+  background-color: RGB(32, 155, 186);
+  border-radius: 100px;
+  margin-left: 8px;
+}
+#ar-lang:hover, #en-lang:hover{
+  background-color: white;
+  box-shadow: 0 0 0px 2px RGB(32, 155, 186);
+  color: RGB(32, 155, 186);
+}
+.container-sidebar{
+  margin-top: 30px;
+  text-align: center;
+  
+}
+.container-sidebar button{
+  color: white;
+  background-color: RGB(32, 155, 186);
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  width: 42%;
+  font-size: 14px;
+  transition: 0.4s;
+}
+#report{
+  margin-left: 5px;
+}
+.container-sidebar button:hover{
+  background-color: white;
+  box-shadow: 0 0 0px 2px RGB(32, 155, 186);
+  color: RGB(32, 155, 186);
+  border-radius: 5px;
+}
+
+
+/*         END SIDE BAR         */
+
+
+
+/*      HOME PAGE DESCRIPTION   */
+
+
+.site-description{
+  background-color: RGB(32, 155, 186);
+  width: 100%;
+  font-family: 'Gugi', cursive;
+  height: 490px;
+  margin-top: -30px;
+  margin-bottom: 0px;
+}
+.site-description span{
+  color: yellow;
+}
+#description{
+  color: white;
+  font-weight: 100;
+  font-size: 21px;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  padding-top: 120px;
+  line-height: 40px;
+}
+
+
+/*        END HOME PAGE DESCRIPTION       */
+
+
+/*        SEARCH BAR        */
+
+
+.container-search{
+  text-align: center;
+  width: 100%;
+}
+.search-bar{
+  text-align: center;
+}
+#search-bar{
+  margin-top: 65px;
+  font-family: 'Baloo Da 2', cursive;
+  font-size: 20px;
+  text-align: center;
+  color: RGB(32, 155, 186);
+  width: 320px;
+  background-image: url(icons/loupe.png);
+  background-size: 29px;
+  background-repeat: no-repeat ;
+  background-position: center;
+  outline: none;
+  padding: 10px;
+  padding-left: 30px;
+  border: none;
+  border-radius: 100px;
+  transition: 0.7s ;
+  box-shadow: 0 0 0px 3px lightskyblue;
+}
+#search-bar:hover {
+  background-position-x: 15px;
+  box-shadow: 0 0 0px 3px yellow;
+}
+
+
+/*       END SEARCH BAR       */
+
+
+/*         FOOTER BAR         */
+
+
+footer{
+  text-align: center;
+  color: white;
+  background-color: #2E2E2E;
+  position: sticky;
+  font-size: 13px;
+  width: 100%;
+  top: 100%;
+  margin-top: 120px;
+
+}
+footer p{
+  margin-top: 2px;
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+footer a{
+  outline: none;
+  text-decoration: none;
+  color: lightskyblue;
+  opacity: 1;
+}
+footer h1{
+  margin-top: -12px;
+  font-family: 'Merienda One', cursive;
+  color: white;
+  margin-bottom: -20px;
+  opacity: 0.3;
+}
+
+
+/*        END FOOTER BAR        */
